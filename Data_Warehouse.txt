@@ -1,0 +1,58 @@
+## Design a Data Warehouse
+
+The solid waste management company has provied the sample data they wish to collect.
+
+I started my project by designing a Star Schema warehouse by identifying the columns for the various dimension and fact tables in the schema.
+
+### Design the dimension table MyDimDate
+
+Write down the fields in the MyDimDate table in text editor one field per line. The company is looking at a granularity of day. Which means they would like to have the ability to generate the report on yearly, monthly, daily, and weekday basis.
+
+Here is a partial list of fields to serve as an example:
+
+    dateid
+    month
+    monthname
+    ...
+    ...
+
+DATEID
+DATE
+YEAR
+QUARTER
+QUARTERNAME
+MONTH
+MONTHNAME
+DAY
+WEEKDAY
+WEEKDAYNAME
+
+
+### Design the dimension table MyDimWaste
+
+Write down the fields in the MyDimWaste table in text editor one field per line.
+
+WASTEID
+WASTETYPE
+WASTENAME
+
+### Design the dimension table MyDimZone
+
+Write down the fields in the MyDimZone table in text editor one field per line.
+
+COLLECTIONZONEID
+COLLECTIONZONENAME
+CITYID
+CITYNAME
+
+
+### Design the fact table MyFactTrips
+
+Write down the fields in the MyFactTrips table in text editor one field per line.
+
+TRIPID
+DATEID
+STATIONID
+TRUCKID
+WASTECOLLECTED
+
